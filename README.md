@@ -205,6 +205,11 @@ var obj = {root: {$: {id: "my id"}, _: "my inner text"}};
 var builder = new xml2js.Builder();
 var xml = builder.buildObject(obj);
 ```
+will result in:
+```
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root id="my id">my inner text</root>
+```
 
 ### Adding xmlns attributes
 
